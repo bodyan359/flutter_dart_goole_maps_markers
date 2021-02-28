@@ -7,6 +7,23 @@ class GoogleMapScreen extends StatefulWidget {
 }
 
 class _GoogleMapScreenState extends State<GoogleMapScreen> {
+  Set<Marker> _markers = {};
+
+  void _onMapCreated(GoogleMapController controller) {
+    setState(() {
+      _markers.add(
+        Marker(
+          markerId: MarkerId('id-1'),
+          position: LatLng(37.42796133580664, -122.085749655962),
+          infoWindow: InfoWindow(
+            title: 'Some Place',
+            snippet: 'Snippet',
+          ),
+        ),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,10 +31,13 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
         title: Text('Google Map'),
       ),
       body: GoogleMap(
-          initialCameraPosition: CameraPosition(
-        target: LatLng(37.42796133580664, -122.085749655962),
-        zoom: 15,
-      )),
+        onMapCreated: _onMapCreated,
+        markers: _markers,
+        initialCameraPosition: CameraPosition(
+          target: LatLng(37.42796133580664, -122.085749655962),
+          zoom: 15,
+        ),
+      ),
     );
   }
 }
