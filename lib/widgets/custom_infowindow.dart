@@ -19,7 +19,8 @@ class _CustomInfoWindowState extends State<CustomInfoWindow> {
   final LatLng _center = LatLng(37.427961, -122.085750);
   final double _zoom = 16.0;
 
-  final Map<String, ParkingPlace> _parkingPlaceList = {
+  Map<String, ParkingPlace> _parkingPlaceList = {
+    // TODO: add new markers here from add_parking_place_screen
     "Place1": ParkingPlace(
         LatLng(37.429175, -122.083951), 'Place1', 'Place for maximum chill', 5),
     "Place2": ParkingPlace(
