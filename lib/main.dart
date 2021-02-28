@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dart_goole_maps_markers/model/infowindow.dart';
 import 'package:flutter_dart_goole_maps_markers/screens/google_map_screen.dart';
+import 'package:flutter_dart_goole_maps_markers/widgets/custom_infowindow.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (context) => InfoWindowModel(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -41,8 +45,8 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.push(context,
-              MaterialPageRoute(builder: (context) => GoogleMapScreen())),
-          tooltip: 'Google Map',
+              MaterialPageRoute(builder: (context) => CustomInfoWindow())),
+          tooltip: 'Google Maps',
           child: Icon(Icons.pin_drop_rounded)),
     );
   }

@@ -13,11 +13,16 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
     setState(() {
       _markers.add(
         Marker(
-          markerId: MarkerId('id-1'),
+          markerId: MarkerId('id-1'), // TODO: custom id
+          // TODO: Custom icon style(parking icon)
           position: LatLng(37.42796133580664, -122.085749655962),
           infoWindow: InfoWindow(
             title: 'Some Place',
             snippet: 'Snippet',
+            //Latitude & Longitude
+            //Name
+            //Description
+            //Ranking (1-5 stars)
           ),
         ),
       );
