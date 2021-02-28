@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723507553606",
+    "project_id": "fluttermapmarkers",
+    "storage_bucket": "fluttermapmarkers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723507553606:android:a4d63a876cdf1ba432f147",
+        "android_client_info": {
+          "package_name": "com.example.flutter_dart_goole_maps_markers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723507553606-08i4t4jb73bslhjv3ibfrel186ea14kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9I46kr55HTlC4WOhBUm3e-OxXAzaHpro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723507553606-08i4t4jb73bslhjv3ibfrel186ea14kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

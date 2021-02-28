@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dart_goole_maps_markers/model/parking_place.dart';
 
 class AddParkingPlaceScreen extends StatefulWidget {
   @override
@@ -14,7 +13,9 @@ class _AddParkingPlaceScreenState extends State<AddParkingPlaceScreen> {
           title: Text("Add New Parking Place"),
         ),
         body: Column(
-          children: [],
+          children: [
+            Text("21133"),
+          ],
         ));
   }
 }
